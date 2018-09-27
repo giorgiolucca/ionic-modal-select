@@ -16,6 +16,9 @@
       <button type="button" class="button button-clear" ng-click="clearSearch()">
         {{ ui.cancelSearchButton }}
       </button>
+      <button type="button" ng-if="::!ui.hideReset" class="button button-stable" ng-click="unsetValue()">
+        {{ ui.resetButton }}
+      </button>
     </div>
 
     <ion-content class="has-header" ng-class="{'has-subheader':ui.hasSearch}">
