@@ -9,14 +9,14 @@
     </ion-header-bar>
 
     <div class="bar bar-subheader item-input-inset" ng-class="::ui.subHeaderClass" ng-if="ui.hasSearch">
-      <label class="item-input-wrapper" style="max-width: 170px;">
+      <label class="item-input-wrapper">
         <i class="icon ion-ios-search placeholder-icon"></i>
         <input type="search" placeholder="{{::ui.searchPlaceholder}}" ng-model="ui.searchValue">
       </label>
       <button type="button" class="button button-clear btn-cancel" ng-click="clearSearch()" style="font-size: 14px !important;">
         {{ ui.cancelSearchButton }}
       </button>
-      <button type="button" ng-if="::!ui.hideReset" class="button button-clear btn-reset" ng-click="unsetValue()" style="position: absolute; right: -15px; top: -5px; font-size: 14px !important;">
+      <button type="button" ng-if="::!ui.hideReset" class="button button-clear btn-reset" ng-click="unsetValue()" style="font-size: 14px !important;">
         {{ ui.resetButton }}
       </button>
     </div>
